@@ -33,4 +33,15 @@ void rev_string(char *s)
 	int j = 0;
 	int k;
 
+	while (i > 0)
+	{
+		i--;
+		s_rev[j] = *(s + i);
+		j++;
+	}
 
+	for (k = 0; k < len; k++)
+	{
+		*(s + k) = s_rev[k];
+	}
+}
