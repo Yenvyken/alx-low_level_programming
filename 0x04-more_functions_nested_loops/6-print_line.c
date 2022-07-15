@@ -1,16 +1,29 @@
 #include "main.h"
 
 /**
- * print_line - Checks for a digit fr
- * @c: The character to be checked.
+ * cap_string - A function that capitalizes all words of
+ * a string
+ * @x: string parameter
  *
- * Return: 1 if a number is a digit, 0 otherwise.
+ * Return: String capitalization
  */
 
-int _isdigit(int c)
+char *cap_string(char *x)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
+	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	int len = 13;
+	int a = 0, i;
+
+	while (x[a])
+	{
+		i = 0;
+		while (i < len)
+		{
+			if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
+				x[a] = x[a] - 32;
+			i++;
+		}
+		a++;
+	}
+	return (x);
 }
