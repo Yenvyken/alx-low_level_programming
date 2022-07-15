@@ -1,19 +1,13 @@
-#include "holberton.h"
+include "main.h"
+include <string.h>
+
 /**
- *  * _strlen - Swap the value of two integers
- *   * @s: Set of characters
- *    *
- *     * Return: Nothing
- *     */
+ * _strlen - A function to get the length of a string
+ * @s: string pointer to be passed into this function
+ * Return: returns length of a string
+ */
 
 int _strlen(char *s)
 {
-		int i = 0;
-
-			while (*(s + i) != '\0')
-					{
-								i++;
-									}
-
-				return (i);
-
+	return (strlen(s));
+}
