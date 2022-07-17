@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
  * _strlen - Swap the value of two integers
- * @s: Set of characters
- * Return: Nothing
+ *  @s: Set of characters
+ *
+ *  Return: Nothing
  */
-
 int _strlen(char *s)
 {
 	int i = 0;
@@ -15,7 +14,6 @@ int _strlen(char *s)
 		i++;
 	}
 	return (i);
-
 }
 
 /**
@@ -27,7 +25,7 @@ int _strlen(char *s)
 
 void rev_string(char *s)
 {
-	int len = _strlen(s)
+	int len = _strlen(s);
 	int i = len;
 	char s_rev[1000];
 	int j = 0;
@@ -45,3 +43,6 @@ void rev_string(char *s)
 		*(s + k) = s_rev[k];
 	}
 }
+
+
+
