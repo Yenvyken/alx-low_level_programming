@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * puts2 - Swap the value of two integers
  * @str: Set of characters
